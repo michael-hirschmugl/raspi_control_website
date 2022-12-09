@@ -1,0 +1,3 @@
+[submodule "raspi_gpio_control"]
+	path = raspi_gpio_control
+	url = git@github.com:michael-hirschmugl/raspi_gpio_control.git
