@@ -12,10 +12,14 @@
 <body>
    {{ raspiPinStateDict }}
    <h1>RPi Web Server</h1>
-   {% if raspiPinStateDict["Pin1"] == 1 %}
-   <h2>Pin 1 = 1</h2>
+   {% if raspiPinStateDict["Pin23"] == 1 %}
+   <h2></h2>Pin 23 is <strong>on</strong></h2>
+   <div class="row"><div class="col-md-2">
+      <a href="/setpin/23/0" class="btn btn-block btn-lg btn-default" role="button">Turn off</a></div>
    {% else %}
-   <h2>Pin 1 = 0</h2>
+   <h2></h2>Pin 23 is <strong>off</strong></h2>
+   <div class="row"><div class="col-md-2">
+      <a href="/setpin/23/1" class="btn btn-block btn-lg btn-primary" role="button">Turn on</a></div>
    {% endif %}
 </body>
 </html>
