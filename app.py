@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 from turbo_flask import Turbo
 turbo = Turbo(app)
@@ -19,7 +19,8 @@ def main():
 def action(pinNumber, pinState):
    raspi_gpio_control(int(pinNumber), int(pinState))
    inject_load()
-   return render_template('main.html')
+
+   return redirect(url_for('main'))
 
 @app.context_processor
 def inject_load():
