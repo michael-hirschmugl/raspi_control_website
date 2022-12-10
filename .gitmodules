@@ -1,3 +1,6 @@
 [submodule "raspi_gpio_control"]
 	path = raspi_gpio_control
 	url = git@github.com:michael-hirschmugl/raspi_gpio_control.git
+[submodule "mp_inverter_control"]
+	path = mp_inverter_control
+	url = git@github.com:michael-hirschmugl/mp_inverter_control.git
